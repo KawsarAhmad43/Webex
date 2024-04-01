@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webex | Registration</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('assets/css/reg.css') }}">
-
 </head>
 
 <body>
@@ -19,7 +18,9 @@
         </center>
         <hr>
         <h2>Registration</h2>
-        <form action="#" method="post">
+        <form action="{{ route('register') }}" method="post">
+
+            @csrf
             <div class="form-group">
                 <label for="upline_number">Upline Number</label>
                 <input type="text" id="upline_number" name="upline_number" class="form-control" required />
@@ -35,12 +36,12 @@
             </div>
             <div class="form-group">
                 <label for="confirm_password">Confirm Password</label>
-                <input type="password" id="confirm_password" name="confirm_password" class="form-control" required />
+                <input type="password" id="confirm_password" name="password_confirmation" class="form-control"
+                    required />
             </div>
             <input type="submit" value="Register" class="btn btn-primary" />
         </form>
     </div>
-
     <!-- Bootstrap JS and dependencies (optional) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>

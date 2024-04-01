@@ -18,7 +18,7 @@
             <a href="login.html" class="btn btn-primary">Login</a>
             <div style="width: 10px"></div>
             <!-- Add a space between buttons -->
-            <a href="{{ route('signup') }}" class="btn btn-primary">Registration</a>
+            <a href="{{ route('register.index') }}" class="btn btn-primary">Registration</a>
         </div>
     </div>
 

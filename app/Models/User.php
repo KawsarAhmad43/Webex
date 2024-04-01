@@ -20,6 +20,13 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'gender',
+        'dob',
+        'address',
+        'phone',
+        'upline_number',
+        'smart_contract_address',
+        'profile_picture',
     ];
 
     /**
